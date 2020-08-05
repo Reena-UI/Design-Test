@@ -1,29 +1,15 @@
-$(".slider").slick({
- 
-    // normal options...
-    infinite: false,
-   
-    // the magic
-    responsive: [{
-   
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          infinite: true
-        }
-   
-      }, {
-   
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          dots: true
-        }
-   
-      }, {
-   
-        breakpoint: 300,
-        settings: "unslick" // destroys slick
-   
-      }]
+function initSlider(){
+  $('.slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      autoplay: true,
+      prevArrow: '<div class="slick-prev"><i class="fa fa-chevron-left"></i></div>',
+      nextArrow: '<div class="slick-next"><i class="fa fa-chevron-right"></i></div>'
   });
+}
+
+$(document).on('ready', function () {
+  initSlider();
+});
