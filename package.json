@@ -33,6 +33,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.14.0"
+        "@fortawesome/fontawesome-free": "^5.14.0",
+        "slick-carousel": "^1.8.1"
     }
 }

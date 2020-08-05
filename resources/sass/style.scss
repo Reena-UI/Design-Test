@@ -2,5 +2,23 @@
    &-top{
        background-color:$black;
        color: $white;
+       &-link{
+        color: $white;
+        font-weight: 600;
+       }
+       .social-list{
+          
+               li{
+                margin-right: 1rem;
+                   a{
+                    color: $white;
+                    
+                   }
+               }
+          
+       }
    }
+   &-middle{
+    color: $black;
+}
 }
