@@ -1,41 +1,39 @@
 <!-- Footer-->
-<footer class="footer text-center">
+<footer class="footer" >
+    <div class="footer-top text-white" style="background-image: url('{{ asset('images/footer-bg.webp') }}');">
     <div class="container">
-        <div class="row">
-            <!-- Footer Location-->
-            <div class="col-lg-4 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4">Location</h4>
-                <p class="lead mb-0">
-                    2215 John Daniel Drive
-                    <br />
-                    Clark, MO 65243
-                </p>
+        <div class="row justify-content-around">
+            <div class="col-12 text-center mb-4">
+                <h2>How it works</h2>
+                <p class="lead">Discover how Marketti can help you find everything you want.</p>
             </div>
-            <!-- Footer Social Icons-->
-            <div class="col-lg-4 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4">Around the Web</h4>
-                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+            <div class="col-md-3 text-center">
+                <div class="footer-top--icon mx-auto d-flex align-items-center justify-content-center">
+                    <i class="fa fa-map-pin fa-2x text-primary"></i>
+                </div>
+                <h4>Markets</h4>
+                <p>Create your market profile on our platform for free, helping you & your traders gain discoverability.</p>
+                <a href="" class="font-weight-bold text-uppercase">I want to know more</a>
             </div>
-            <!-- Footer About Text-->
-            <div class="col-lg-4">
-                <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                <p class="lead mb-0">
-                    Freelance is a free to use, MIT licensed Bootstrap theme created by
-                    <a href="http://startbootstrap.com">Start Bootstrap</a>
-                    .
-                </p>
+            <div class="col-md-3 text-center">
+                <div class="footer-top--icon mx-auto d-flex align-items-center justify-content-center">
+                    <i class="fa fa-store fa-2x text-primary"></i>
+                </div>
+                <h4>Traders</h4>
+                <p>We’re helping independents save time, make money & be discovered online.</p>
+                <a href="" class="font-weight-bold text-uppercase">Take the hassle out of the hustle</a>
             </div>
+            <div class="col-md-3 text-center">
+                <div class="footer-top--icon mx-auto d-flex align-items-center justify-content-center">
+                    <i class="fa fa-shopping-cart fa-2x text-primary"></i>
+                </div>
+                <h4>Shoppers</h4>
+                <p>Find your favourite independents #downthemarket, wherever you are across the UK.</p>
+                <a href="" class="font-weight-bold text-uppercase">See what we're about</a>
+            </div>
+            
         </div>
     </div>
+     </div>
+    <div class="footer-bottom"></div>
 </footer>
-<!-- Copyright Section-->
-<div class="copyright py-4 text-center text-white">
-    <div class="container"><small>Copyright © Your Website 2020</small></div>
-</div>
-<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-<div class="scroll-to-top d-lg-none position-fixed">
-    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
-</div>

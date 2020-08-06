@@ -12,14 +12,73 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+ <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" ></script>
     </head>
     <body>
         @include('layouts.inc.nav')
         @yield('content')
          @include('layouts.inc.footer')
-         <!-- Scripts -->
+        
   
-    <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/app.js') }}" defer></script>
+         <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
+   
+    <script>
+        $( document ).ready(function() {
+$('#Market_list').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:false,
+    nav:false,
+    autoplay:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            
+        },
+        600:{
+            items:2,
+            
+        },
+        900:{
+            items:3,
+           
+        },
+        1000:{
+            items:4,
+           
+        }
+    }
+})
+$('#Trader_list').owlCarousel({
+    loop:true,
+    margin:30,
+    dots:false,
+    nav:false,
+    autoplay:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:2,
+            
+        },
+        600:{
+            items:3,
+            
+        },
+        900:{
+            items:4,
+           
+        },
+        1000:{
+            items:5,
+           
+        }
+    }
+})
+});
+    </script>
     </body>
 </html>

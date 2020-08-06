@@ -20,7 +20,9 @@
 
                 a {
                     color: $white;
-                    margin-right: 0.75rem;
+                    @include media-breakpoint-up(sm) {
+                    margin-right: 0.5rem;
+                    }
                     &:hover,&:focus,&:active{
                         color: $primary;
                     }
@@ -59,7 +61,15 @@
         opacity: 0.6;
         z-index: 3;
     }
-
+&-item{
+    img{
+        @include media-breakpoint-down(sm) {
+            min-height: 250px;
+            object-position: center;
+            object-fit: cover;
+        }
+    }
+}
     &-caption {
         z-index: 999;
         position: absolute;
@@ -81,4 +91,143 @@
         -ms-flex-pack: center;
         justify-content: center;
     }
+}
+.banner-grid{
+    position: relative;
+    
+    @include media-breakpoint-up(md) {
+        height: 414px;
+    }
+    @include media-breakpoint-up(lg) {
+        height: 560px;
+    }
+    @include media-breakpoint-up(xl) {
+        height: 664px;
+        }
+    @include media-breakpoint-up(xxl) {
+    height: 844px;
+    }
+       
+    &__banner{
+        @include media-breakpoint-up(md) {
+        width: 50%;
+        position: absolute;
+        }
+       
+        padding: 2px;
+        &-image{
+            transition: transform 1s;
+            object-position: center;
+            }
+        &:hover{
+            .banner-grid__banner-image{
+                transform: scale(1.1);
+            }
+        }
+        &-link{
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+            display: block;
+        }
+    }
+    &__banner1 {
+        top: 0;
+        left: 0;
+        height: 50%;
+        @include media-breakpoint-up(lg) {
+        height: 56%;
+        }
+    }
+    &__banner2 {
+        top: 0;
+        right: 0;
+        height: 50%;
+        @include media-breakpoint-up(lg) {
+        height: 44%;
+        }
+    }
+    &__banner3 {
+        left: 0;
+        bottom: 0;
+        height: 50%;
+        @include media-breakpoint-up(lg) {
+        height: 44%;
+        }
+    }
+    &__banner4 {
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        @include media-breakpoint-up(lg) {
+        height: 56%;
+        }
+    }
+    &__banner-content{
+        position: absolute;
+        padding:25px;
+        z-index: 99;
+        
+        @include media-breakpoint-up(xl) {
+            padding: 45px 60px 40px;
+            }
+    }
+    
+}
+.traders{
+    &-carousel{
+        &--item{
+            padding:50px 20px;
+            border:1px solid #eee;
+            img{
+                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                filter: grayscale(100%);
+                &:hover{
+                    filter: none;
+                    -webkit-filter: grayscale(0%);
+                }
+            }
+        }
+    }
+}
+.footer{
+&-top{
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    &:before{
+        content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.6;
+   
+    }
+    &--icon{
+        background-color: rgba($white,0.9);
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+       position: relative;
+       margin-bottom: 30px;
+      i{
+        z-index: 99;
+      }
+        &:before{
+            content: "";
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        background-color:rgba($white,0.7);
+        border-radius: 50%;
+    }
+        
+    }
+}
 }
