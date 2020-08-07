@@ -23,6 +23,8 @@
   
          <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/polyfills.js"></script>
+<script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/webp-hero.bundle.js"></script>
    
     <script>
         $( document ).ready(function() {
@@ -73,12 +75,14 @@ $('#Trader_list').owlCarousel({
            
         },
         1000:{
-            items:5,
+            items:6,
            
         }
     }
 })
 });
+var webpMachine = new webpHero.WebpMachine();
+ webpMachine.polyfillDocument();
     </script>
     </body>
 </html>
