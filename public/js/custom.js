@@ -1,15 +1,66 @@
-function initSlider(){
-  $('.slider').slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      autoplay: true,
-      prevArrow: '<div class="slick-prev"><i class="fa fa-chevron-left"></i></div>',
-      nextArrow: '<div class="slick-next"><i class="fa fa-chevron-right"></i></div>'
+$( document ).ready(function() {
+  $('#Market_list').owlCarousel({
+      loop:true,
+      margin:10,
+      dots:false,
+      nav:false,
+      autoplay:true,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              
+          },
+          600:{
+              items:2,
+              
+          },
+          900:{
+              items:3,
+             
+          },
+          1000:{
+              items:4,
+             
+          }
+      }
+  })
+  $('#Trader_list').owlCarousel({
+      loop:true,
+      margin:30,
+      dots:false,
+      nav:false,
+      autoplay:true,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:2,
+              
+          },
+          600:{
+              items:3,
+              
+          },
+          900:{
+              items:4,
+             
+          },
+          1000:{
+              items:6,
+             
+          }
+      }
+  })
   });
-}
-
-$(document).on('ready', function () {
-  initSlider();
-});
+  var webpMachine = new webpHero.WebpMachine();
+   webpMachine.polyfillDocument();
+   wow = new WOW(
+    {
+    boxClass:     'wow',      // default
+    animateClass: 'animate__animated ', // default
+    offset:       0,          // default
+    mobile:       true,       // default
+    live:         true        // default
+  }
+  )
+  wow.init();

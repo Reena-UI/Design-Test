@@ -1,7 +1,7 @@
  @extends('layouts.app')
  @section('content')
 
- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+ <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
      <div class="carousel-inner">
          <div class="carousel-item active">
              <img class="d-block w-100" src="{{ asset('images/banner.webp') }}" alt="First slide">
@@ -31,7 +31,7 @@
          <span class="sr-only">Next</span>
      </a>
  </div>
- <section class="py-5">
+ <section class="py-5 animate__animated animate__slideInUp animate__delay-1s">
      <div class="container">
          <div class="banner-grid">
              <div class="banner-grid__banner banner-grid__banner1">
@@ -75,7 +75,7 @@
          </div>
      </div>
  </section>
- <section class="pt-4 pb-5 ">
+ <section class="pt-4 pb-5 animate__animated animate__slideInUp animate__delay-3s">
      <div class="container">
          <div class="row">
              <div class="col-12">
@@ -114,7 +114,7 @@
          </div>
      </div>
  </section>
- <section class="py-5 gray-bg">
+ <section class="py-5 gray-bg animate__animated animate__slideInUp animate__delay-4s">
      <div class="container">
          <div class="row">
              <div class="col-12">

@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layouts/home/home');
 });
+Route::get('/markets/shop', function () {
+    return view('layouts/markets/shop');
+});
+
 
 Auth::routes();
 
