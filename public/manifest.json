@@ -1,0 +1,9 @@
+{
+    "short_name": "your app",
+    "name": "your app",
+    "theme_color": "#fff",
+    "background_color": "#fff",
+    "display": "standalone",
+    "start_url": "http://127.0.0.1:8000/",
+    "orientation": "portrait"
+  }

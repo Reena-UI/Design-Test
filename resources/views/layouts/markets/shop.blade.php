@@ -39,10 +39,10 @@
                   <h2 class="text-uppercase font-weight-bold">Market description</h2>
                   <ul class="list-inline mb-sm-0 font-weight-bold">
               
-                         <li class="list-inline-item"><a href=""><i class="fa fa-phone"></i> 07475292828</a></li>
-                         <li class="list-inline-item"><a href=""><i class="fas fa-envelope"></i> bluebirds.handmade.market@gmail.com</a></li>
+                         <li class="list-inline-item"><a href="tel:07475292828"><i class="fa fa-phone"></i> 07475292828</a></li>
+                         <li class="list-inline-item"><a href="mailto:bluebirds.handmade.market@gmail.com"><i class="fas fa-envelope"></i> bluebirds.handmade.market@gmail.com</a></li>
 </ul>
-              </div>  
+              </div>        
               <div class="col-sm-3 text-sm-right">
               <ul class="list-inline mb-0 lead">
               

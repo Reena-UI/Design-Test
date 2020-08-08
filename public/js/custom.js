@@ -52,9 +52,8 @@ $( document ).ready(function() {
       }
   })
   });
-  var webpMachine = new webpHero.WebpMachine();
-   webpMachine.polyfillDocument();
-   wow = new WOW(
+
+  wow = new WOW(
     {
     boxClass:     'wow',      // default
     animateClass: 'animate__animated ', // default
@@ -64,3 +63,8 @@ $( document ).ready(function() {
   }
   )
   wow.init();
+ 
+  $(window).on('load', function(){     
+    $('#LocationModal').modal('show');
+     }); 
+

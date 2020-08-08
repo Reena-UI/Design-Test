@@ -434,3 +434,16 @@ white-space: nowrap;
     border-radius: 3px;
     }
 }
+.location-list{
+    button.close{
+        position: absolute;
+        right: 0;
+        background: #000;
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        color: #fff;
+        text-shadow: none;
+        z-index: 99;
+    }
+}

@@ -82,3 +82,46 @@
         </div>
     </div>
 </footer>
+<div class="modal location-list" tabindex="-1" role="dialog"  id="LocationModal" >
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <div class="modal-body">
+        <div class="row align-items-center">
+        <div class="col-md-5">
+        <img src="{{ asset('images/location.png') }}" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-7 pr-4">
+            <h2 class="text-uppercase font-weight-bold">Choose your Location</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ipsam minus aut? Officiis, commodi dolore, quis libero id nisi sit amet adipisci aliquid atque similique quo nemo ab repellat. Culpa?</p>
+            <select name="" id="" class="form-control">
+                                <option value="">Anywhere</option>
+                                <option value="Abbeydorney">Abbeydorney</option>
+                                <option value="Abbeyfeale">Abbeyfeale</option>
+                                <option value="Abbeyknockmoy">Abbeyknockmoy</option>
+                                <option value="Abbeylara">Abbeylara</option>
+                                <option value="Abbeyleix">Abbeyleix</option>
+                                <option value="Abbeyshrule">Abbeyshrule</option>
+                                <option value="Abbeyside">Abbeyside</option>
+                                <option value="Aberaeron">Aberaeron</option>
+                                <option value="Aberdare">Aberdare</option>
+                                <option value="Aberdeen">Aberdeen</option>
+                                <option value="Aberfeldy">Aberfeldy</option>
+                                <option value="Abergavenny">Abergavenny</option>
+                                <option value="Abergele">Abergele</option>
+                                <option value="Abertillery">Abertillery</option>
+                                <option value="Aberystwyth">Aberystwyth</option>
+                                <option value="Abingdon">Abingdon</option>
+                                <option value="Accrington">Accrington</option>
+                                <option value="Achill Sound ">Achill Sound </option>
+                                <option value="Achonry">Achonry</option>
+                            </select>
+            <a class="btn btn-black text-uppercase btn-block mt-3" href="javascript:;" data-dismiss="modal"> Continue</a>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
